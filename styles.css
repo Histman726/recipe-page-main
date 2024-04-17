@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root{
+  /* Primary */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral */
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--eggshell);
+}
+
+/* Principal */
+
+main{
+  margin-inline: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 735px;
+  background: white;
+  padding: 33px 45px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+h2, h1, h3{
+  font-family: 'Young Serif', cursive;
+  font-weight: 400;
+  color: var(--dark-raspberry);
+}
+
+p, li, td{
+  font-family: 'Outfit', cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--wenge-brown);
+}
+
+/* Imagen */
+.image{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.image img{
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Description */
+.description h1{
+  font-size: 35px;
+  color: black;
+  margin-bottom: 18px;
+}
+
+/* Preparation */
+.preparation{
+  background-color: rgba(250, 215, 231, 0.2);
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.preparation h3{
+  font-family: 'Outfit', cursive;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+ul li::marker, ol li::marker{
+  color: var(--nutmeg);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.preparation ul, .ingredients ul, .instructions ol{
+  padding: 0 20px;
+}
+
+.preparation ul li, .ingredients ul li, .instructions ol li{
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+
+/* Ingredients */
+.ingredients h2, .instructions h2, .nutrition h2{
+  margin-bottom: 24px;
+}
+
+.ingredients hr, .instructions hr{
+  margin-top: 30px;
+}
+
+/* Instructions */
+.instructions ol li{
+  padding-bottom: 5px;
+}
+
+/* Nutrition */
+.nutrition p{
+  margin-bottom: 28px;
+}
+
+.nutrition table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table tr td{
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+
+.strong{
+  color: var(--dark-raspberry);
+  font-weight: bold;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
